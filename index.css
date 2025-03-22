@@ -1,0 +1,304 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+}
+header,footer{
+  height: 50px;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+header .logo h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ff5722;
+}
+
+header .auth-buttons button {
+  padding: 10px 20px;
+  margin-left: 1px;
+  margin-right: 20px;
+  border: none;
+ background-color: #333 ;
+  color: #fff;
+  /*cursor: pointer;*/
+  transition: background-color 0.3s;
+
+}
+header .auth-buttons button a{
+  text-decoration: none;
+color: white;
+}
+
+header .auth-buttons button:hover {
+  background-color: #db693c;
+}
+
+/* Hero Section */
+.hero {
+  
+  background-image: url('/Frontend/images/BMW\ 7\ Series\ -\ High-Tech\ Meets\ Luxury.webp');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+.hero-content .search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.hero-content .search-bar input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  text-align: center;
+}
+
+.hero-content .search-bar button {
+  padding: 10px;
+  border: none;
+  background-color: #eae7e5;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.hero-content .search-bar button:hover {
+  background-color: #e64a19;
+}
+
+.hero-content .cta-button {
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero-content .cta-button:hover {
+  background-color: #e64a19;
+}
+
+/* Featured Posts Section */
+.featured-posts {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.featured-posts h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-item .post-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  text-align: left;
+}
+
+.carousel-item .post-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.carousel-item .post-content p {
+  margin: 10px 0;
+}
+
+.carousel-item .post-content a {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+.carousel-item .post-content a:hover {
+  text-decoration: underline;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Categories Section */
+.categories {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.categories-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.category-card {
+  width: 200px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-card i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ff5722;
+}
+
+.category-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Footer Section */
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+  color: #ff5722;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
