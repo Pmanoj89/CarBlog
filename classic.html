@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Cars - Car Blog</title>
+     
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+   
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+header h1 {
+    text-align: center;
+}
+header a {
+    text-align: left;
+    color: rgb(246, 246, 246);
+    text-decoration: none;
+}
+header a:hover {
+    color: rgb(115, 40, 40);
+}
+
+
+.back-btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background: #0056b3;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.post {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    width: 300px;
+    text-align: center;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.post h2 {
+    color: #333;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background: #0056b3;
+}
+
+</style>
+<body>
+
+    <header>
+        <h1>Classic Cars - Timeless Legends</h1>
+        <a href="categories.html"  >← Back </a>
+    </header>
+
+    <section class="blog-posts">
+        <article class="post">
+            <img src="/Frontend/images/1967 Ford Mustang - The American Muscle Icon.webp" alt="1967 Ford Mustang">
+            <h2>1967 Ford Mustang - The American Muscle Icon</h2>
+            <p>The '67 Mustang remains one of the most beloved muscle cars in history...</p>
+            <a href="post1.html" class="read-more">Read More</a>
+        </article>
+
+        <article class="post">
+            <img src="/Frontend/images/1957-chevrolet-bel-air.jpg" alt="1957 Chevrolet Bel Air">
+            <h2>1957 Chevrolet Bel Air - The Golden Age of Design</h2>
+            <p>With its tailfins and chrome details, the '57 Bel Air is a symbol of classic Americana...</p>
+            <a href="post2.html" class="read-more">Read More</a>
+        </article>
+
+        <article class="post">
+            <img src="/Frontend/images/jaguar E-Type - The Most Beautiful Car Ever.webp" alt="Jaguar E-Type">
+            <h2>Jaguar E-Type - The Most Beautiful Car Ever</h2>
+            <p>Enzo Ferrari once called the Jaguar E-Type the most beautiful car in the world...</p>
+            <a href="post3.html" class="read-more">Read More</a>
+        </article>
+
+        <article class="post">
+            <img src="/Frontend/images/Mercedes-Benz 300SL - The Gullwing Legend.webp" alt="Mercedes-Benz 300SL Gullwing">
+            <h2>Mercedes-Benz 300SL - The Gullwing Legend</h2>
+            <p>With its iconic gullwing doors, the 300SL is one of the most sought-after classics...</p>
+            <a href="post4.html" class="read-more">Read More</a>
+        </article>
+    </section>
+
+</body>
+</html>

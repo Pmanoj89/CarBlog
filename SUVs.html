@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUVs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+header a {
+    text-align: left;
+    color: rgb(246, 246, 246);
+    text-decoration: none;
+}
+header a:hover {
+    color: rgb(115, 40, 40);
+}
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.post {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    width: 300px;
+    text-align: center;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.post h2 {
+    color: #333;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background: #0056b3;
+}
+
+.back-btn {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    width: 200px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+</style>
+<body>
+
+    <header>
+        <h1>SUVs</h1>
+        <a href="categories.html">⬅ Back </a>
+    </header>
+
+    <section class="blog-posts">
+        <article class="post">
+            <img src="/Frontend/images/Jeep Wrangler - The Ultimate Off-Roader.avif" alt="Jeep Wrangler">
+            <h2>Jeep Wrangler - The Ultimate Off-Roader</h2>
+            <p>The Jeep Wrangler is a legendary off-road SUV with rugged performance...</p>
+            <a href="post-jeep.html" class="read-more">Read More</a>
+        </article>
+
+        <article class="post">
+            <img src="/Frontend/images/Range Rover - Luxury Meets Power.jpg" alt="Range Rover">
+            <h2>Range Rover - Luxury Meets Power</h2>
+            <p>The Range Rover offers an unbeatable combination of luxury and off-road capability...</p>
+            <a href="post-range.html" class="read-more">Read More</a>
+        </article>
+
+        <article class="post">
+            <img src="/Frontend/images/Toyota Land Cruiser - A Reliable Beast.avif" alt="Toyota Land Cruiser">
+            <h2>Toyota Land Cruiser - A Reliable Beast</h2>
+            <p>The Land Cruiser is one of the most durable and capable SUVs in the world...</p>
+            <a href="post-landcruiser.html" class="read-more">Read More</a>
+        </article>
+    </section>
+   
+</body>
+</html>

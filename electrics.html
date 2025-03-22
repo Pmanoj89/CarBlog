@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Cars - Car Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header  {
+        background-color: #222;
+        color: white;
+        padding: 20px;
+    }
+         
+        header h1{
+            text-align: center;
+        }
+    
+    header a {
+        text-align: left;
+        color: rgb(246, 246, 246);
+        text-decoration: none;
+    }
+    
+    header a:hover {
+        color: rgb(115, 40, 40);
+    ;
+    }
+    
+    .blog-posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+    
+    .post {
+        background: white;
+        margin: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+        width: 300px;
+        text-align: center;
+    }
+    
+    .post img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .post h2 {
+        color: #333;
+    }
+    
+    .read-more {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .read-more:hover {
+        background: #0056b3;
+    }
+    
+</style>
+<body>
+
+    <header>
+        <h1>Electric Cars - Reviews & News</h1>
+        <a href="categories.html">← Back</a>
+    </header>
+
+    <section class="blog-posts">
+        <article class="post">
+            <img src="/Frontend/images/Tesla Model S - The King of Electric Sedans.avif" alt="Tesla Model S">
+            <h2>Tesla Model S - The King of Electric Sedans</h2>
+            <p>The Tesla Model S is known for its insane acceleration and long range...</p>
+            <a href="post1.html" class="read-more">Read More</a>
+        </article>
+
+        <article class="post">
+            <img src="/Frontend/images/Tata Nexon.avif" alt="Rivian R1T">
+            <h2>Tata Nexon </h2>
+            <p>With off-road capabilities and a futuristic design, Rivian R1T is making waves...</p>
+            <a href="post2.html" class="read-more">Read More</a>
+        </article>
+
+        <article class="post">
+            <img src="/Frontend/images/Tat Curvv EV.avif" alt="Porsche Taycan">
+            <h2>Tata Curvv Ev - Luxury Meets Performance</h2>
+            <p>The Tata Curvv is a coupe subcompact crossover SUV produced by Tata Motors since 2024</p>
+            <a href="post3.html" class="read-more">Read More</a>
+        </article>
+
+        <article class="post">
+            <img src="/Frontend/images/Hyundai Ioniq 5 - The Future of Affordable EVs.jpg" alt="Hyundai Ioniq 5">
+            <h2>Hyundai Ioniq 5 - The Future of Affordable EVs</h2>
+            <p>With an innovative design and a budget-friendly price, Ioniq 5 is changing the game...</p>
+            <a href="post4.html" class="read-more">Read More</a>
+        </article>
+    </section>
+    <script>
+        function filterCategory(category) {
+        window.location.href = category + ".html"; // Redirect to the corresponding category page
+    }
+    </script>
+
+</body>
+</html>

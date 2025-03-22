@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Cars</title>
+     
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+    .blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+header a {
+    text-align: left;
+    color: rgb(246, 246, 246);
+    text-decoration: none;
+}
+header a:hover {
+    color: rgb(115, 40, 40);
+}
+.post {
+    background: white;
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.post h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.post p {
+    font-size: 14px;
+    color: #666;
+}
+
+.post a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.post a:hover {
+    background: #0056b3;
+}
+
+.post:hover {
+    transform: scale(1.05);
+}
+
+</style>
+<body>
+
+    <header>
+        <h1>Sports Cars</h1>
+        <a href="categories.html" class="back-btn">⬅ Back </a>
+    </header>
+
+    <section class="blog-posts">
+        <div class="post">
+            <img src="/Frontend/images/101380711 (1).cms" alt="Ferrari">
+            <h2>Ferrari SF90 Stradale: The Future of Supercars</h2>
+            <p>The Ferrari SF90 is a hybrid beast with 986 horsepower...</p>
+            <a href="/my-app/src/pages/sport1.html">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="/Frontend/images/2022_Lamborghini_Huracan_STO_Front.jpg" alt="Lamborghini">
+            <h2>Lamborghini Huracán STO: Track-Ready Power</h2>
+            <p>Explore the new Huracán STO, a lightweight, track-focused supercar...</p>
+            <a href="https://www.lamborghini.com/en-en/models/huracan/huracan-sto">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="/Frontend/images/mclaren-720s-spider-by-mso.jpg" alt="McLaren">
+            <h2>McLaren 720S: Blending Speed and Luxury</h2>
+            <p>The 720S is a true masterpiece of engineering and aerodynamics...</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+<script>
+    function filterCategory(category) {
+    window.location.href = category + ".html"; // Redirect to the corresponding category page
+}
+</script>
+</body>
+</html>

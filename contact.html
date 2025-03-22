@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Car Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style >
+    /* css*/
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+   
+    height: auto,70%,auto;
+}
+header,footer{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+
+}
+
+main {
+    padding: 5px;
+    
+}
+
+form {
+    width: 100%;
+    
+    /*margin: 50% auto;*/
+    background-image :url('/image.png') ;
+    background-color: #fff;
+    padding: 10px;
+    margin: 50px,0,0,auto;
+    border-radius: 8px;
+    width: 100%;
+    height: auto,70%,auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+        <header>Contact Us</header>
+     
+    <main>
+        <form id="contactForm" action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Car Blog. All rights reserved.</p>
+    </footer>
+    <script >
+        // script.js
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+
+    if (!name || !email || !subject || !message) {
+        alert('Please fill out all fields.');
+        event.preventDefault();
+    }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Categories</title>
+     
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+ 
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.category {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.category h2 a{
+    margin: 10px 0;
+    color: #333;
+    text-decoration: none;
+    color: blue;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+</style>
+<body>
+
+    <header>
+        <h1>Car Blog Categories</h1>
+    </header>
+
+    <section class="categories">
+        <div class="category" onclick="filterCategory('sports')">
+            <img src="/Frontend/images/Hyundai Ioniq 5 - The Future of Affordable EVs.jpg" alt="Sports Cars">
+            <h2> <a href="/Frontend/pages/sport.html">Sports Cars</a></h2>
+           
+        </div>
+
+        <div class="category" onclick="filterCategory('suv')">
+             <img src="/Frontend/images/Hyundai Ioniq 5 - The Future of Affordable EVs.jpg" alt="SUVs">
+            <h2><a href="/Frontend/pages/SUVs.html">SUVs</a></h2>
+        </div>
+
+        <div class="category" onclick="filterCategory('electric')">
+            <img src="/Frontend/images/Tesla Model S - The King of Electric Sedans.jpg" alt="Electric Cars">
+            <h2><a href="/Frontend/pages/electrics.html">Electric Cars</a></h2>
+        </div>
+
+        <div class="category" onclick="filterCategory('luxury')">
+            <img src="/Frontend/images/Range Rover - Luxury Meets Power.jpg" alt="Luxury Cars">
+           <h2> <a href="/Frontend/pages/luxury.html">Luxury Cars</a></h2>
+        </div>
+
+        <div class="category" onclick="filterCategory('classic')">
+            <img src="/Frontend/images/1967 Ford Mustang.jpg" alt="Classic Cars">
+            <h2><a href="/Frontend/pages/classic.html">Classic Cars</a></h2>
+        </div>
+    </section>
+
+    <script >
+        function filterCategory(category) {
+    //alert("You selected: " + category + " category!");
+    // You can add functionality to redirect to the category page
+     window.location.href = category + ".html";
+    // For example, if you have a page for each category, you can redirect to that page
+    // window.location.href
+    //     = "/Frontend/pages/" + category + ".html";}
+        }
+    </script>
+
+</body>
+</html>

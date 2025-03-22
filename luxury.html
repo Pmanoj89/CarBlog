@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Cars - Car Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+   
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+header a {
+    text-align: left;
+    color: rgb(246, 246, 246);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: rgb(115, 40, 40);
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.post {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    width: 300px;
+    text-align: center;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.post h2 {
+    color: #333;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background: #0056b3;
+}
+
+</style>
+<body>
+
+    <header>
+        <h1>Luxury Cars - Reviews & News</h1>
+        <a href="categories.html">← Back</a>
+    </header>
+
+    <section class="blog-posts">
+        <article class="post">
+            <img src="/Frontend/images/rolls-royce-phantom.jpg" alt="Rolls-Royce Phantom">
+            <h2>Rolls-Royce Phantom - The Pinnacle of Luxury</h2>
+            <p>The Rolls-Royce Phantom sets the standard for opulence and refinement...</p>
+            <a href="post1.html" class="read-more">Read More</a>
+        </article>
+
+        <article class="post">
+            <img src="/Frontend/images/Bentley Flying Spur.jpg" alt="Bentley Flying Spur">
+            <h2>Bentley Flying Spur - The Ultimate Luxury Sedan</h2>
+            <p>Blending power and elegance, the Bentley Flying Spur is a masterpiece...</p>
+            <a href="post2.html" class="read-more">Read More</a>
+        </article>
+
+        <article class="post">
+            <img src="/Frontend/images/Mercedes-Maybach S-Class.avif" alt="Mercedes-Maybach S-Class">
+            <h2>Mercedes-Maybach S-Class - Redefining Comfort</h2>
+            <p>With handcrafted interiors and cutting-edge technology, the Maybach S-Class is a luxury icon...</p>
+            <a href="post3.html" class="read-more">Read More</a>
+        </article>
+
+        <article class="post">
+            <img src="/Frontend/images/BMW 7 Series - High-Tech Meets Luxury.webp" alt="BMW 7 Series">
+            <h2>BMW 7 Series - High-Tech Meets Luxury</h2>
+            <p>The BMW 7 Series combines state-of-the-art features with executive comfort...</p>
+            <a href="post4.html" class="read-more">Read More</a>
+        </article>
+    </section>
+
+</body>
+</html>
